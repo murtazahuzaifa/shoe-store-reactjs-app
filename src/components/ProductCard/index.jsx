@@ -22,7 +22,7 @@ const useStyles = makeStyles({
   }
 });
 
-export default function ProductCard({imgSrc, prodName, price}) {
+export default function ProductCard({imgSrc, name, price}) {
   const classes = useStyles();
 
   return (
@@ -30,12 +30,12 @@ export default function ProductCard({imgSrc, prodName, price}) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="https://idealancy.pk/wp-content/uploads/2020/07/Sink-faucet-clip-in-drain-rack.jpg"
-          title={prodName}
+          image={imgSrc}
+          title={name}
         />
         <CardContent>
           <Typography gutterBottom variant="subtitle1" component="h6" align='center'>
-            {prodName}
+            {name}
           </Typography>
           <Typography variant="h6" component="h6" align='center'>
             {price}/- PKR

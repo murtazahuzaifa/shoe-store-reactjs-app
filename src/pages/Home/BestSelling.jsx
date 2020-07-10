@@ -15,27 +15,28 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-function NewCollections() {
+function BestSelling() {
     const classes = useStyles();
     
-    const {newCollections} = Products;
+    const {bestSelling} = Products;
 
     return (
         <Container maxWidth='lg' className={classes.root} >
-            <Typography variant='h4' component='h4' align='center' >New Collections</Typography>
+            <br/>
+            <Typography variant='h4' component='h4' align='center' >Best Selling</Typography>
             <hr />
                 <Grid className={classes.gridContainer} container spacing={2} component='div' justify='center' wrap='wrap' >
                     <Grid container item xs={12} sm={6} md={3} justify='center' >
-                        <ProductCard {...newCollections[0]} />
+                        <ProductCard {...bestSelling[0]} />
                     </Grid>
                     <Grid container item xs={12} sm={6} md={3} justify='center' >
-                        <ProductCard {...newCollections[1]} />
+                        <ProductCard {...bestSelling[1]} />
                     </Grid>
                     <Grid container item xs={12} sm={6} md={3} justify='center' >
-                        <ProductCard {...newCollections[2]} />
+                        <ProductCard {...bestSelling[2]} />
                     </Grid>
                     <Grid container item xs={12} sm={6} md={3} justify='center' >
-                        <ProductCard {...newCollections[3]} />
+                        <ProductCard {...bestSelling[3]} />
                     </Grid>
                 </Grid>
         </Container >
@@ -43,4 +44,4 @@ function NewCollections() {
     );
 }
 
-export default NewCollections;
+export default BestSelling;
