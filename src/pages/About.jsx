@@ -36,11 +36,11 @@ function About() {
             </div>
             <hr />
             <div className={classes.mydetails}>
-                <div><img className={classes.image} src={require('../img.jpg')}/></div>
+                <div><img className={classes.image} src={require('../img.jpg')} alt='creater' title='Creater of this app' /></div>
                 <div className={classes.info}>
                     <h4>Name: <strong>Murtaza</strong></h4>
                     <hr/>
-                    <h5><a href="https://github.com/murtazahuzaifa/shoe-store-reactjs-app" target='_blank'>Github repo</a></h5>
+                    <h5><a href="https://github.com/murtazahuzaifa/shoe-store-reactjs-app" rel="noopener noreferrer" target='_blank'>Github repo</a></h5>
                     <h6>Cell: +923360031756</h6>
                     <br/>
                     <p>This shoe store app is developed by Murtaza<br/>as a Project of Bootcamp.</p>

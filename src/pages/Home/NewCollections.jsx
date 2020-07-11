@@ -22,7 +22,7 @@ function NewCollections() {
 
     return (
         <Container maxWidth='lg' className={classes.root} >
-            <Typography variant='h4' component='h4' align='center' >New Collections</Typography>
+            <Typography variant='h4' component='h4' align='center' ><b>New Collections</b></Typography>
             <hr />
                 <Grid className={classes.gridContainer} container spacing={2} component='div' justify='center' wrap='wrap' >
                     <Grid container item xs={12} sm={6} md={3} justify='center' >

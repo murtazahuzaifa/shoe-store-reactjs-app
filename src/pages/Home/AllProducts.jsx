@@ -24,7 +24,7 @@ function BestSelling() {
     return (
         <Container maxWidth='lg' className={classes.root} >
             <br/>
-            <Typography variant='h4' component='h4' align='center' >ALL Products</Typography>
+            <Typography variant='h4' component='h4' align='center' ><b>ALL Products</b></Typography>
             <hr />
                 <Grid className={classes.gridContainer} container spacing={2} component='div' justify='center' wrap='wrap' >
                     <Grid container item xs={12} sm={6} md={3} justify='center' >
