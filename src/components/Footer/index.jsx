@@ -13,9 +13,9 @@ function Footer() {
         <div className='footer' >
             <hr/>
             <div  >
-                <IconButton  > <GitHub /> </IconButton>
-                <IconButton  > <Home />  </IconButton>
-                <IconButton  > <Facebook />  </IconButton>
+                <IconButton href="https://github.com/murtazahuzaifa/shoe-store-reactjs-app" target='_blank' > <GitHub /> </IconButton>
+                <IconButton href="/Home" > <Home />  </IconButton>
+                <IconButton href="https://www.facebook.com/murtaza.huzaifa.52/" target='_blank' > <Facebook />  </IconButton>
             </div>
             <p> <strong>Murtaza</strong> Ⓒ 2020</p>
         </div>
