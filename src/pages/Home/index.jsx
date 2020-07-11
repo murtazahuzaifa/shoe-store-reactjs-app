@@ -13,7 +13,6 @@ function Home(){
             <NewCollections/>
             <BestSelling/>
             <AllProducts/>
-            <h4> Home </h4>
         </div>
     );
 }

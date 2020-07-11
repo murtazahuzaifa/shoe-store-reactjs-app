@@ -1,0 +1,35 @@
+.quantity-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+.quantity-input::-webkit-outer-spin-button,
+.quantity-input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield;
+}
+
+.quantity-input{
+    -moz-appearance: textfield;
+    border: 0;
+    background-color: silver;
+    font-size: large;
+    text-align: center;
+    width: 50px;
+    height: 40px;
+  }
+
+.plus-btn{
+    font-size: x-large;
+    width: 25px;
+    text-align: center;
+}
+.minus-btn{
+    font-size: x-large;
+    width: 25px;
+    text-align: center;
+}

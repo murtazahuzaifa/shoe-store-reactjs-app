@@ -1,6 +1,7 @@
 export const Products = {
     newCollections: [
         {
+            // src https://www.famousfootwear.com/
             id: 0,
             name: "AIR MAX TORCH 4 RUNNING SHOE",
             imgSrc: "https://www.famousfootwear.com/ProductImages/shoes_ia36255.jpg?trim.threshold=105&width=600&height=350&paddingWidth=40&anchor=bottomcenter",
@@ -29,25 +30,25 @@ export const Products = {
 
     bestSelling: [
         {
-            id: 0,
+            id: 4,
             name: "MEN'S CHEYENNE SLIP RESISTANT MEDIUM/WIDE WORK BOOT",
             imgSrc: "https://www.famousfootwear.com/ProductImages/shoes_ia52760.jpg?trim.threshold=105&width=600&height=350&paddingWidth=40&anchor=bottomcenter",
             price: 5900,
         },
         {
-            id: 1,
+            id: 5,
             name: "MIDTOWN CAP TOE OXFORD",
             imgSrc: "https://www.famousfootwear.com/ProductImages/shoes_ia59883.jpg?trim.threshold=105&width=600&height=350&paddingWidth=40&anchor=bottomcenter",
             price: 3600,
         },
         {
-            id: 2,
+            id: 6,
             name: "AIR MONARCH IV X-WIDE WALKING SHOE",
             imgSrc: "https://www.famousfootwear.com/ProductImages/shoes_ia50771.jpg?trim.threshold=105&width=600&height=350&paddingWidth=40&anchor=bottomcenter",
             price: 4800,
         },
         {
-            id: 3,
+            id: 7,
             name: "RILAR MEMORY FOAM MEDIUM/WIDE OXFORD",
             imgSrc: "https://www.famousfootwear.com/ProductImages/shoes_ia00872.jpg?trim.threshold=105&width=600&height=350&paddingWidth=40&anchor=bottomcenter",
             price: 6200,

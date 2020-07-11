@@ -1,14 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-// import ShoppingCart from '@material-ui/icons/ShoppingCart';
+import {Typography, Button, Card, CardActionArea, CardActions, CardContent, CardMedia  } from '@material-ui/core';
 import AddShoppingCart from '@material-ui/icons/AddShoppingCart';
+import {useNavigate} from 'react-router-dom';
 
 const useStyles = makeStyles({
   root: {
@@ -19,11 +13,18 @@ const useStyles = makeStyles({
   },
   cardAction:{
       justifyContent:"center",
+      // float:''
   }
 });
 
-export default function ProductCard({imgSrc, name, price}) {
+export default function ProductCard({imgSrc, name, price, id}) {
   const classes = useStyles();
+
+  const navigate = useNavigate();
+
+  const handleClick = ()=>{
+    navigate(`/Products/${id}`);
+  }
 
   return (
     <Card className={classes.root} elevation={4}>
@@ -32,6 +33,7 @@ export default function ProductCard({imgSrc, name, price}) {
           className={classes.media}
           image={imgSrc}
           title={name}
+          onClick={handleClick}
         />
         <CardContent>
           <Typography gutterBottom variant="subtitle1" component="h6" align='center'>
@@ -43,10 +45,6 @@ export default function ProductCard({imgSrc, name, price}) {
         </CardContent>
       </CardActionArea>
       <CardActions className={classes.cardAction}>
-        {/* <Button size="small" color="primary">
-        <ShoppingCart/>
-          Buy Now
-        </Button> */}
         <Button size="small" color="primary">
         <AddShoppingCart/>
           Add TO Cart

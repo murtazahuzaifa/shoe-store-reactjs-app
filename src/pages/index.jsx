@@ -1,11 +1,15 @@
 import Home from './Home';
 import About from './About';
 import Products from './Products';
-import ContactUs from './ContactUs';
+import ProductsIndex from './Products/ProductsIndex';
+import ProductDetails from './Products/ProductDetails';
+import PageNotFound from './PageNotFound';
 
 export {
-    Home, 
+    Home,
     About,
     Products,
-    ContactUs,
+    ProductsIndex,
+    ProductDetails,
+    PageNotFound,
 }
